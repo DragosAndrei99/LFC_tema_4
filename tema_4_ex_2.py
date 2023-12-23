@@ -27,16 +27,17 @@ def concatenate_invalid_words(filename):
 
     return concatenated_invalid
 
-# Test:
-filename = 'file_for_ex_2.txt'
+if __name__ == '__main__':
+    # Test:
+    filename = 'input_tema_4.txt'
 
-# Task a. - Să se verifice câte cuvinte au un număr par de “a”-uri la început
-even_a_count = count_words_with_even_as(filename)
-print(f"Number of words with an even number of 'a's in the beginning: {even_a_count}")
+    # Task a. - Să se verifice câte cuvinte au un număr par de “a”-uri la început
+    even_a_count = count_words_with_even_as(filename)
+    print(f"Number of words with an even number of 'a's in the beginning: {even_a_count}")
 
-# Task b. Să se înlocuiască fiecare cuvânt care începe și se temină cu “b” cu lungimea lui.
-replace_b_words(filename)
+    # Task b. Să se înlocuiască fiecare cuvânt care începe și se temină cu “b” cu lungimea lui.
+    replace_b_words(filename)
 
-# Task c. Să se concateneze toate cuvintele invalide (nu sunt cuvinte peste vocabularul dat) din fișier, dacă există
-concatenated_invalid = concatenate_invalid_words(filename)
-print(f"Concatenated invalid words: {concatenated_invalid}")
+    # Task c. Să se concateneze toate cuvintele invalide (nu sunt cuvinte peste vocabularul dat) din fișier, dacă există
+    concatenated_invalid = concatenate_invalid_words(filename)
+    print(f"Concatenated invalid words: {concatenated_invalid}")

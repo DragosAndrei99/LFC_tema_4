@@ -18,8 +18,9 @@ def check_string_conditions(input_string):
 
     return conditions_met
 
-# Test:
-example_strings = ["Abc#1234", "NoSpecialChars", "Short#Pwd", "$ecretP@ssword", "AbCdEfG$12"]
-for string in example_strings:
-    result = check_string_conditions(string)
-    print(f"{string}: {'Valid' if result else 'Invalid'}")
+if __name__ == '__main__':
+    # Test:
+    example_strings = ["Abc#1234", "NoSpecialChars", "Short#Pwd", "$ecretP@ssword", "AbCdEfG$12"]
+    for string in example_strings:
+        result = check_string_conditions(string)
+        print(f"{string}: {'Valid' if result else 'Invalid'}")
